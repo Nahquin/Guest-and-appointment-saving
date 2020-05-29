@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: YELLOWGREEN;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vendeg_es_idopont_tarolo.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="menu" layoutX="279.0" layoutY="167.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="330.0" prefWidth="381.0" visible="false">
+         <children>
+            <Button layoutX="78.0" layoutY="46.0" mnemonicParsing="false" onAction="#naptarA" prefHeight="100.0" prefWidth="225.0" text="Naptár" />
+            <Button layoutX="78.0" layoutY="183.0" mnemonicParsing="false" onAction="#nevjegyekA" prefHeight="100.0" prefWidth="225.0" text="Névjegyek" />
+         </children>
+      </AnchorPane>
+      <FlowPane fx:id="naptar" alignment="CENTER" layoutX="60.0" layoutY="109.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-border-color: black;">
+         <children>
+            <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="785.0">
+               <children>
+                  <Label fx:id="ev" alignment="CENTER" contentDisplay="CENTER" layoutX="371.0" layoutY="3.0" text="2020" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#left" text="&lt;">
+               <FlowPane.margin>
+                  <Insets right="5.0" />
+               </FlowPane.margin></Button>
+            <Label fx:id="honap" alignment="CENTER" contentDisplay="CENTER" text="APR" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#right" onKeyPressed="#right" text="&gt;">
+               <FlowPane.margin>
+                  <Insets left="5.0" />
+               </FlowPane.margin></Button>
+            <GridPane fx:id="gNaptar" alignment="CENTER" gridLinesVisible="true" prefWidth="800.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                  <Text fx:id="nap1" strokeType="OUTSIDE" strokeWidth="0.0" style=": ;" text="test" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text fx:id="nap2" strokeType="OUTSIDE" strokeWidth="0.0" text="test" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text fx:id="nap3" strokeType="OUTSIDE" strokeWidth="0.0" text="test" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text fx:id="nap4" strokeType="OUTSIDE" strokeWidth="0.0" text="test" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text fx:id="nap5" strokeType="OUTSIDE" strokeWidth="0.0" text="test" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text fx:id="nap6" strokeType="OUTSIDE" strokeWidth="0.0" text="test" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text fx:id="nap7" strokeType="OUTSIDE" strokeWidth="0.0" text="test" textAlignment="CENTER" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <rowConstraints>
+                  <RowConstraints prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <FlowPane.margin>
+                  <Insets top="20.0" />
+               </FlowPane.margin>
+            </GridPane>
+            <Button mnemonicParsing="false" onAction="#menuA" text="Menü" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#idopontfoglalasA" text="Időpont foglalás" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#idopontmodositasA" text="Időpont módosítás" textAlignment="CENTER">
+               <FlowPane.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </FlowPane>
+      <GridPane fx:id="idopontfoglalas" layoutX="345.0" layoutY="270.0" prefHeight="163.0" prefWidth="252.0" visible="false">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="56.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="157.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="157.0" minWidth="10.0" prefWidth="41.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vendég" GridPane.halignment="CENTER" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hónap" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nap" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Óra" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#naptarA" text="Vissza" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#nevjegyekA" text="Új" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#idopontHozzaad" text="Mentés" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="cbVendegek" prefWidth="150.0" GridPane.columnIndex="1" />
+            <ChoiceBox fx:id="cbHonap" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="cbNap" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ChoiceBox fx:id="cbOra" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="nevjegyek" cacheShape="false" hgap="10.0" layoutX="84.0" layoutY="86.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-: ;" vgap="10.0" visible="false">
+         <children>
+            <Label styleClass="textColor" text="Vendég" GridPane.halignment="CENTER" />
+            <Label styleClass="textColor" text="Info" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <TextField fx:id="txtVendeg" GridPane.columnIndex="1" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#hozzaad" prefWidth="80.0" text="Hozzáad" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#modosit" prefWidth="80.0" text="Módosít" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#biztosanTorlod" prefWidth="80.0" text="Töröl" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label styleClass="textColor" text="Tel" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <TableView fx:id="tblVendegek" GridPane.columnSpan="2147483647" GridPane.rowIndex="4">
+               <columns>
+                  <TableColumn fx:id="oNev" prefWidth="239.0" text="Név" />
+                  <TableColumn fx:id="oInfo" prefWidth="211.0" text="Info" />
+                  <TableColumn fx:id="oTel" prefWidth="169.0" text="Tel" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtInfo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtTel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#menuA" text="Menü" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#uj" prefWidth="80.0" text="Új" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="152.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <BorderPane fx:id="popup" layoutX="370.0" layoutY="310.0" prefHeight="73.0" prefWidth="200.0" visible="false">
+         <bottom>
+            <Button mnemonicParsing="false" onAction="#bPopup" text="Ok" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <TextField fx:id="txtPopup" alignment="CENTER" editable="false" prefHeight="41.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <GridPane fx:id="idopontokModositasa" hgap="10.0" layoutX="29.0" layoutY="22.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" styleClass="bodybg" vgap="10.0" visible="false">
+         <children>
+            <Label styleClass="textColor" text="Vendég" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label styleClass="textColor" text="Hónap" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#modositI" prefWidth="80.0" text="Módosít" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#biztosanTorlod" prefWidth="80.0" text="Töröl" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Label styleClass="textColor" text="Nap" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <TableView fx:id="tblIdopontok" GridPane.columnSpan="2147483647" GridPane.rowIndex="7">
+               <columns>
+                  <TableColumn fx:id="oVendeg" prefWidth="200.0" text="Vendég" />
+                  <TableColumn fx:id="oHonap" prefWidth="200.0" text="Hónap" />
+                  <TableColumn fx:id="oNap" prefWidth="200.0" text="Nap" />
+                  <TableColumn fx:id="oOra" prefWidth="109.0" text="Óra" />
+               </columns>
+            </TableView>
+            <Button mnemonicParsing="false" onAction="#menuA" text="Menü" GridPane.columnIndex="7" GridPane.halignment="CENTER" />
+            <Label styleClass="textColor" text="Óra" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="cbHonapIKer" prefWidth="150.0" GridPane.columnIndex="1" />
+            <Label styleClass="textColor" text="Hónap" />
+            <ChoiceBox fx:id="cbVendegI" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#keresesI" text="Keresés" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <ChoiceBox fx:id="cbHonapI" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="cbNapI" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="cbOraI" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="48.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="152.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+      <TableView fx:id="tblIdopontokI" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="855.0" visible="false">
+         <columns>
+            <TableColumn fx:id="oVendeg1" prefWidth="200.0" text="Vendég" />
+            <TableColumn fx:id="oHonap1" prefWidth="200.0" text="Hónap" />
+            <TableColumn fx:id="oNap1" prefWidth="200.0" text="Nap" />
+            <TableColumn fx:id="oOra1" prefWidth="109.0" text="Óra" />
+            <TableColumn fx:id="oId1" prefWidth="109.0" text="Id" />
+         </columns>
+      </TableView>
+      <GridPane fx:id="popupT" layoutX="380.0" layoutY="316.0" style="-fx-background-color: WHITE; -fx-border-color: BLACK;" visible="false">
+         <children>
+            <Button mnemonicParsing="false" onAction="#bNemT" text="Nem" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#bIgenT" text="Igen" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="txtPopupT" alignment="CENTER" editable="false" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" />
+            <TextField fx:id="txtPopupTname" alignment="CENTER" editable="false" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <TextField fx:id="txtPopupTdata" alignment="CENTER" editable="false" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>
